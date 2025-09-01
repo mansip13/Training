@@ -1,0 +1,140 @@
+{
+  "location": "Surat, Gujarat, India",
+  "country": "India",
+  "city": "surat",
+  "current_temp": "28°F",
+  "condition": "Mostly Sunny",
+  "humidity": "74%",
+  "wind": null,
+  "pressure": "1003 mb",
+  "visibility": "5 km",
+  "uv_index": null,
+  "timestamp": "2025-09-01T11:58:48.158520+05:30",
+  "hourly_forecast": [
+    {
+      "time": "11:00 AM",
+      "temperature": "30°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "12:00 PM",
+      "temperature": "30°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "1:00 PM",
+      "temperature": "33°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "2:00 PM",
+      "temperature": "33°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "3:00 PM",
+      "temperature": "21°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "4:00 PM",
+      "temperature": "22°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "5:00 PM",
+      "temperature": "28°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "6:00 PM",
+      "temperature": "37°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "7:00 PM",
+      "temperature": "29°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "8:00 PM",
+      "temperature": "22°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "9:00 PM",
+      "temperature": "21°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "10:00 PM",
+      "temperature": "26°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "11:00 PM",
+      "temperature": "24°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "12:00 AM",
+      "temperature": "30°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "1:00 AM",
+      "temperature": "31°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "2:00 AM",
+      "temperature": "17°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "3:00 AM",
+      "temperature": "22°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "4:00 AM",
+      "temperature": "23°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "5:00 AM",
+      "temperature": "19°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "6:00 AM",
+      "temperature": "37°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "7:00 AM",
+      "temperature": "25°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "8:00 AM",
+      "temperature": "30°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "9:00 AM",
+      "temperature": "33°F",
+      "condition": "Mostly Sunny"
+    },
+    {
+      "time": "10:00 AM",
+      "temperature": "42°F",
+      "condition": "Mostly Sunny"
+    }
+  ],
+  "metadata": {
+    "saved_at": "2025-09-01T12:01:07.230508+05:30",
+    "data_version": "1.0",
+    "source": "timeanddate.com"
+  }
+}

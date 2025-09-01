@@ -1,0 +1,140 @@
+{
+  "location": "Paris, Paris, France",
+  "country": "Unknown",
+  "city": "Paris",
+  "current_temp": "16°F",
+  "condition": "Cloudy",
+  "humidity": "94%",
+  "wind": null,
+  "pressure": "1009 mb",
+  "visibility": "7 km",
+  "uv_index": null,
+  "timestamp": "2025-09-01T11:56:31.702079+05:30",
+  "hourly_forecast": [
+    {
+      "time": "11:00 AM",
+      "temperature": "19°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "12:00 PM",
+      "temperature": "12°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "1:00 PM",
+      "temperature": "27°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "2:00 PM",
+      "temperature": "18°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "3:00 PM",
+      "temperature": "26°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "4:00 PM",
+      "temperature": "28°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "5:00 PM",
+      "temperature": "20°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "6:00 PM",
+      "temperature": "27°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "7:00 PM",
+      "temperature": "10°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "8:00 PM",
+      "temperature": "15°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "9:00 PM",
+      "temperature": "9°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "10:00 PM",
+      "temperature": "22°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "11:00 PM",
+      "temperature": "8°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "12:00 AM",
+      "temperature": "10°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "1:00 AM",
+      "temperature": "14°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "2:00 AM",
+      "temperature": "21°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "3:00 AM",
+      "temperature": "19°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "4:00 AM",
+      "temperature": "16°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "5:00 AM",
+      "temperature": "10°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "6:00 AM",
+      "temperature": "27°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "7:00 AM",
+      "temperature": "22°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "8:00 AM",
+      "temperature": "16°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "9:00 AM",
+      "temperature": "27°F",
+      "condition": "Cloudy"
+    },
+    {
+      "time": "10:00 AM",
+      "temperature": "28°F",
+      "condition": "Cloudy"
+    }
+  ],
+  "metadata": {
+    "saved_at": "2025-09-01T11:58:30.506386+05:30",
+    "data_version": "1.0",
+    "source": "timeanddate.com"
+  }
+}
