@@ -1,8 +1,8 @@
-# 🌦️ Weather CLI Scraper
+# Weather CLI Scraper
 
 A comprehensive command-line weather data scraping and visualization tool that fetches real-time and historical weather information from timeanddate.com.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -16,11 +16,11 @@ A comprehensive command-line weather data scraping and visualization tool that f
 - [Configuration](#configuration)
 - [Contributing](#contributing)
 
-## 🌟 Overview
+## Overview
 
 This Weather CLI application is a sophisticated web scraping tool that extracts weather data from timeanddate.com and presents it in various formats including interactive tables, statistical summaries, and visual plots. The application supports both current weather conditions and historical weather data analysis.
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 - **Real-time Weather**: Fetch current weather conditions for any city
@@ -42,7 +42,7 @@ This Weather CLI application is a sophisticated web scraping tool that extracts 
 - **Visual Plotting**: ASCII-based temperature scatter plots
 - **Time-based Filtering**: Focus on specific time ranges
 
-## 🔧 Technologies Used
+## Technologies Used
 
 ### Web Scraping Stack
 - **Requests**: HTTP library for web requests with timeout and header management
@@ -63,7 +63,7 @@ This Weather CLI application is a sophisticated web scraping tool that extracts 
 - **JSON**: Structured data storage and city caching
 - **CSV**: Tabular data export format
 
-## 🏗️ Architecture
+## Architecture
 
 The application follows a modular architecture with clear separation of concerns:
 
@@ -88,7 +88,7 @@ The application follows a modular architecture with clear separation of concerns
 - **`utils.py`**: Helper functions, data processing, and file operations
 - **`config.py`**: Application configuration, URLs, and constants
 
-## 💻 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.13+
@@ -120,7 +120,7 @@ rich>=13.0.0
 plotille>=5.0.0
 ```
 
-## 🚀 Usage
+## Usage
 
 ### Interactive Mode
 ```bash
@@ -164,7 +164,7 @@ python main.py plot24 --city mumbai --save json
 5. **💾 Save Data Options**: Export previously fetched data
 6. **🚪 Exit**: Close application
 
-## 📊 Data Flow
+## Data Flow
 
 ### 1. Web Scraping Process
 ```
@@ -190,7 +190,7 @@ Clean Data → Rich Tables → ASCII Plots → Statistical Summaries → Export 
 5. **Statistical Computation**: Calculate min, max, average, and distribution statistics
 6. **Visualization**: Generate ASCII scatter plots and rich terminal tables
 
-## 📈 Output Examples
+## Output Examples
 
 ### Today's Weather Table
 ```
@@ -242,7 +242,7 @@ Clean Data → Rich Tables → ASCII Plots → Statistical Summaries → Export 
 └─────────────────────────────────────────┘
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 weather-scraper/
@@ -256,14 +256,10 @@ weather-scraper/
 ├── README.md            # Project documentation
 │
 ├── weather_data/        # Data directory (auto-created)
-│   ├── india_cities.json
-│   ├── usa_cities.json
-│   └── *.csv, *.json    # Exported weather data
-│
-└── requirements.txt     # Python dependencies
+
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables
 - `DEFAULT_COUNTRY`: Default country for city searches (default: "india")
@@ -289,7 +285,7 @@ CITY_URL_TEMPLATE = "https://www.timeanddate.com/weather/{}/{}"
 - **Weather Exports**: `{city}_{date}_{type}.{format}` - Exported weather data
 - **Formats**: JSON (structured) and CSV (tabular) export options
 
-## 🔄 Error Handling
+## Error Handling
 
 The application includes comprehensive error handling for:
 - **Network Issues**: Connection timeouts, HTTP errors
@@ -298,42 +294,6 @@ The application includes comprehensive error handling for:
 - **City Selection**: Non-existent cities, empty results
 - **File Operations**: Write permissions, storage errors
 
-## 🚀 Advanced Features
 
-### Smart Data Processing
-- **Multi-column Header Handling**: Automatically processes complex table structures
-- **Time Zone Awareness**: Uses Pendulum for robust date/time operations
-- **Data Validation**: Filters out promotional content and invalid data
-- **Flexible Date Formats**: Supports both YYYY-MM-DD and YYYYMMDD formats
 
-### Caching Strategy
-- **City List Caching**: Reduces API calls by storing city lists locally
-- **Session Persistence**: Maintains country/city selections during session
-- **Data Refresh Options**: Force refresh capabilities for updated data
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Development Guidelines
-- Follow PEP 8 style guidelines
-- Add type hints for new functions
-- Include docstrings for public methods
-- Update tests for new functionality
-- Ensure Rich formatting consistency
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## ⚠️ Disclaimer
-
-This tool is for educational and personal use. Please respect the terms of service of timeanddate.com and implement appropriate rate limiting for production use.
-
----
-
-**Built with ❤️ using Python and modern CLI technologies**
