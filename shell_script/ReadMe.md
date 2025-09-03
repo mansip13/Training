@@ -176,39 +176,3 @@ Add the following line:
 │ └──────── Hour (0-23)
 └────────── Minute (0-59)
 ```
-
-## Learning Outcomes
-
-Upon completion of this training, you will have gained practical experience in:
-
-- Writing robust, maintainable bash scripts
-- Implementing automated file management and system monitoring
-- Scheduling and managing recurring tasks with cron
-- Understanding the practical differences between ETL and ELT workflows
-- Integrating shell scripting with Python for comprehensive automation solutions
-- Implementing logging and error handling in automated workflows
-- Building scalable data processing pipelines
-
-## Prerequisites
-
-- Basic understanding of Linux/Unix command line
-- Python 3.x installed on the system
-- Access to cron job scheduling (Unix/Linux systems)
-- Basic familiarity with CSV data formats
-
-## Getting Started
-
-1. Clone or download the repository
-2. Make scripts executable: `chmod +x practice/*.sh project/scripts/*.sh`
-3. Run practice scripts to familiarize yourself with basic concepts
-4. Execute the ETL/ELT pipelines with sample data
-5. Set up cron jobs for automation practice
-
-## Best Practices
-
-- Always include proper error handling in scripts
-- Use meaningful variable names and add comments
-- Test scripts with sample data before automation
-- Monitor log files regularly for debugging
-- Implement backup strategies for important data
-- Use appropriate file permissions for security
