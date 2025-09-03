@@ -1,175 +1,63 @@
-# Python Learning Path - Data Manipulation, Automation & CLI Applications
+# Training
 
-A comprehensive learning journey focused on building practical Python skills for data manipulation, web scraping, and command-line application development.
+## Overview
 
-## Learning Objectives
+This training program provides hands-on experience with two complementary technology stacks that form the foundation of modern automation and data processing workflows. Each module builds practical skills through real-world projects and comprehensive exercises.
 
-Enhance proficiency in Python for:
-- **Data manipulation and analysis** using modern libraries
-- **Automation and scripting** for repetitive tasks
-- **CLI application development** with professional interfaces
-- **Web scraping** for data collection and monitoring
-- **File operations** with various data formats
+## Training Modules
 
-## Curriculum Overview
+### Module 1: Python Development - Data Manipulation, Automation & CLI Applications
 
-### 1. Data Manipulation with Pandas and NumPy 
-**Focus**: Core data processing and statistical analysis capabilities
+**Focus**: Building professional Python applications for data processing, web scraping, and command-line interfaces
 
-**Key Concepts Covered:**
-- DataFrame creation, manipulation, and analysis
-- Data cleaning and transformation techniques
-- Statistical computations and aggregations
-- Handling missing data and duplicates
-- Time series data processing
+**Key Learning Areas:**
+- **Data Manipulation**: Advanced DataFrame operations with Pandas and NumPy
+- **CLI Development**: Professional command-line applications using Typer and Rich
+- **Web Scraping**: Automated data collection with BeautifulSoup and Requests
+- **Date/Time Handling**: Modern datetime operations with Pendulum
+- **File Operations**: Multi-format data processing (JSON, CSV, structured data)
 
-**Practical Applications:**
-```python
-# Data filtering and statistical analysis
-df = pd.DataFrame(weather_data).drop_duplicates(subset=["Link"])
-stats = {
-    "avg_temp": df['temperature'].mean(),
-    "min_temp": df['temperature'].min(),
-    "max_temp": df['temperature'].max()
-}
-```
+**Core Technologies:**
+- Pandas, NumPy for data analysis
+- BeautifulSoup4, Requests for web scraping  
+- Typer, Rich for CLI development
+- Pendulum for datetime handling
+- Plotille for terminal visualization
 
-### 2. DateTime Handling with Pendulum
-**Focus**: Modern date/time manipulation and formatting
+**Capstone Project**: Weather CLI Scraper - A comprehensive weather application demonstrating real-time data collection, interactive CLI interfaces, statistical analysis, and multi-format data export.
 
-**Key Concepts Covered:**
-- Creating and parsing datetime objects
-- Timezone handling and conversions
-- Date arithmetic and comparisons
-- Custom formatting for different output needs
+**Supporting Projects**:
+- **News Scraper**: Automated headline collection with duplicate detection
+- **Task Manager CLI**: Interactive productivity tool with rich terminal formatting
 
-**Practical Applications:**
-```python
-# Consistent timestamp generation across applications
-timestamp = pendulum.now().format('DD-MM-YYYY HH:mm:ss')
-```
+---
 
-### 3. File Operations with JSON and CSV
-**Focus**: Data persistence and interchange formats
+### Module 2: Shell Scripting & Automation - System Administration & Data Pipelines
 
-**Key Concepts Covered:**
-- Reading and writing JSON files
-- CSV processing with proper encoding
-- Error handling for file operations
-- Data format conversions
+**Focus**: System administration, workflow automation, and data processing pipeline development
 
-**Practical Applications:**
-```python
-# Multi-format data export capabilities
-df.to_csv("weather_data.csv", index=False, encoding="utf-8")
-df.to_json("weather_data.json", orient="records", indent=4)
+**Key Learning Areas:**
+- **Shell Scripting Fundamentals**: Variables, loops, conditionals, and command substitution
+- **System Automation**: File operations, backup strategies, and system monitoring
+- **Task Scheduling**: Cron job configuration and automated workflow management
+- **Data Pipeline Architecture**: ETL vs ELT implementation patterns
+- **Python Integration**: Combining shell scripts with Python for comprehensive solutions
 
-# Dynamic task management with JSON persistence
-def save_task(tasks):
-    with open(task_file, "w") as file:
-        json.dump(tasks, file, indent=4)
-```
+**Core Technologies:**
+- Bash scripting and system utilities
+- Cron for job scheduling
+- Python integration for data transformation
+- File system operations and process management
 
-### 4. CLI Applications with Typer 
-**Focus**: Professional command-line interface development
+**Pipeline Projects**:
+- **ETL Pipeline**: Extract-Transform-Load workflow with data validation
+- **ELT Pipeline**: Extract-Load-Transform for scalable data processing
+- **System Utilities**: Information display, file organization, and calculation tools
 
-**Key Concepts Covered:**
-- Command definition and argument parsing
-- Interactive menu systems
-- Rich terminal formatting and styling
-- User input validation and confirmation
-- Modular CLI architecture
-
-**Practical Applications:**
-```python
-# Rich, interactive CLI interfaces
-app = typer.Typer()
-
-@app.command()
-def today(city: str, country: str = "india", save: str = None):
-    """Fetch today's weather for a specific city."""
-    # Implementation with rich formatting
-```
-
-### 5. Web Scraping with BeautifulSoup 
-**Focus**: Data extraction from web sources
-
-**Key Concepts Covered:**
-- HTML parsing and DOM navigation
-- HTTP request handling with proper headers
-- Data extraction from structured content
-- Error handling for network operations
-- Respectful scraping practices
-
-**Practical Applications:**
-```python
-# Comprehensive web data extraction
-soup = BeautifulSoup(response.content, "html.parser")
-
-# Extract structured data from tables and links
-for a_tag in soup.find_all("a", href=True):
-    if "/news/" in link:
-        news_data.append({
-            "title": text,
-            "link": link,
-            "timestamp": pendulum.now()
-        })
-```
-
-## Capstone Project: Weather CLI Scraper 
-
-### Project Overview
-A sophisticated command-line weather application demonstrating integration of all learned concepts.
-
-### Features Implemented
-- **Multi-source Data Collection**: Real-time and historical weather data
-- **Interactive CLI Interface**: Menu-driven and direct command execution
-- **Data Analysis Capabilities**: Statistical summaries and visualizations
-- **Flexible Export Options**: JSON and CSV format support
-- **Smart City Management**: Automatic city discovery and caching
-- **Rich Terminal UI**: Colorful tables and ASCII plots
+**Key Distinction - ETL vs ELT**:
+- **ETL**: Transform data before loading (better for smaller datasets, data validation)
+- **ELT**: Load data first, then transform (better for large datasets, leverages target system power)
 
 
-## Supporting Projects
 
-News Scraper Application
-Purpose: Automated news headline collection and monitoring system
-Core Functionalities:
 
-Extracts news headlines and article links from BBC News website
-Implements duplicate detection and data cleaning processes
-Generates timestamped entries for tracking scraping activities
-Exports collected data in both CSV and JSON formats for different use cases
-Demonstrates foundational web scraping principles and data structure handling
-
-Skills Demonstrated: BeautifulSoup parsing, HTTP request handling, data deduplication, multi-format export
-Task Management CLI
-Purpose: Personal productivity tool with rich terminal interface
-Core Functionalities:
-
-Interactive menu-driven task management system
-Add, delete, view, and update task status operations
-Persistent JSON-based data storage with automatic key management
-Rich table formatting with separate views for pending and completed tasks
-User-friendly prompts with input validation and confirmation dialogs
-Dynamic task renumbering and organized display layouts
-
-Skills Demonstrated: Typer CLI framework, Rich terminal formatting, JSON persistence, interactive user interfaces
-
-## Technology Stack 
-
-### Core Libraries
-- **Pandas**: Advanced data manipulation and analysis
-- **NumPy**: Numerical computing and statistical operations
-- **BeautifulSoup4**: HTML parsing and web scraping
-- **Requests**: HTTP client with timeout and header management
-
-### CLI & User Experience
-- **Typer**: Modern CLI framework with type hints
-- **Rich**: Terminal formatting, tables, and interactive elements
-- **Plotille**: ASCII-based plotting for terminal visualization
-
-### Data & Time Handling
-- **Pendulum**: Modern date/time manipulation
-- **JSON**: Structured data storage and configuration
-- **CSV**: Tabular data export and interchange
