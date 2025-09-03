@@ -1,0 +1,6 @@
+orderid,customer,amount,country,row_number
+101, Alice , 250 , USA,1
+102, Bob ,NA, UK,2
+103, Charlie , 500 ,NA,3
+104,NA, 400 , Germany,4
+105, Eve ,   , France,5

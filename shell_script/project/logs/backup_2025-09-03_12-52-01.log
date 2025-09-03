@@ -1,0 +1,18 @@
+===== backup started at (2025-09-03_12-52-01) =====
+File Backed up: /home/mansi/project/data/data1.csv -> data1_2025-09-03_12-52-01.csv
+File Backed up: /home/mansi/project/data/data2.csv -> data2_2025-09-03_12-52-01.csv
+File Backed up: /home/mansi/project/data/data3.csv -> data3_2025-09-03_12-52-01.csv
+File Backed up: /home/mansi/project/data/data4.csv -> data4_2025-09-03_12-52-01.csv
+File Backed up: /home/mansi/project/data/data5.csv -> data5_2025-09-03_12-52-01.csv
+Running python data wrangling ...
+Wrangled /home/mansi/project/backups/data1_2025-09-03_12-52-01.csv, rows: 5
+Wrangled /home/mansi/project/backups/data5_2025-09-03_12-50-01.csv, rows: 5
+Wrangled /home/mansi/project/backups/data4_2025-09-03_12-50-01.csv, rows: 6
+Wrangled /home/mansi/project/backups/data2_2025-09-03_12-50-01.csv, rows: 5
+Wrangled /home/mansi/project/backups/data5_2025-09-03_12-52-01.csv, rows: 5
+Wrangled /home/mansi/project/backups/data2_2025-09-03_12-52-01.csv, rows: 5
+Wrangled /home/mansi/project/backups/data1_2025-09-03_12-50-01.csv, rows: 5
+Wrangled /home/mansi/project/backups/data3_2025-09-03_12-50-01.csv, rows: 5
+Wrangled /home/mansi/project/backups/data3_2025-09-03_12-52-01.csv, rows: 5
+Wrangled /home/mansi/project/backups/data4_2025-09-03_12-52-01.csv, rows: 6
+===== backup completed (2025-09-03_12-52-01) =====

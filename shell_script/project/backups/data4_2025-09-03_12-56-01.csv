@@ -1,0 +1,7 @@
+id,value,status,row_number
+1, 100, Active,1
+2,NA, Inactive,2
+3,200,NA,3
+4,   ,Active,4
+5, 300, Active,5
+6,NA,NA,6

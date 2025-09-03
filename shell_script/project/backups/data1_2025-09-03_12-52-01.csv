@@ -1,0 +1,6 @@
+name,age,city,row_number
+Alice,25.0, New York,1
+Bob,30.0, London,2
+Charlie,NA, Paris,3
+NA,28.0, Berlin,4
+David,35.0, Tokyo,5

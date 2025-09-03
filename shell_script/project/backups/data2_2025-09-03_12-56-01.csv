@@ -1,0 +1,6 @@
+product,price,quantity,row_number
+Laptop,1000.0,5.0,1
+Phone,600.0,10.0,2
+Tablet,NA,7.0,3
+Camera,400.0,NA,4
+Headphones,100.0,15.0,5

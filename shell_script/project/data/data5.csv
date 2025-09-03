@@ -1,0 +1,7 @@
+OrderID , Customer , Amount , Country
+101 , Alice , 250 , USA
+102 , Bob , , UK
+103 , Charlie , 500 , 
+104 , , 400 , Germany
+105 , Eve ,   , France
+

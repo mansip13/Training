@@ -1,0 +1,6 @@
+student,marks,subject,row_number
+John,85.0, Math,1
+Sara,90.0, Science,2
+Tom,NA, History,3
+Nina,78.0, English,4
+NA,92.0, Physics,5
