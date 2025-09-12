@@ -6,7 +6,6 @@ It ingests raw beer data into Postgres, transforms it with dbt, and visualizes i
 ---
 
 ## 📂 Project Structure
-## 📂 Project Structure
 
 ```text
 punk-api/
