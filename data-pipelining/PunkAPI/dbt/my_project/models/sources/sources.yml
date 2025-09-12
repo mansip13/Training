@@ -1,0 +1,99 @@
+version: 2
+
+sources:
+  - name: dev
+    tables:
+      - name: raw_beer_data
+        description: "Raw table containing beer data ingested from PunkAPI"
+        columns:
+          - name: id
+            description: "Surrogate primary key for raw_beer_data"
+          - name: beer_id
+            description: "Unique ID of the beer from PunkAPI"
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: "Name of the beer"
+          - name: tagline
+            description: "Tagline or short marketing description"
+          - name: first_brewed
+            description: "Date when the beer was first brewed (MM-YYYY or YYYY)"
+          - name: description
+            description: "Detailed description of the beer"
+          - name: image
+            description: "Image filename or URL for the beer"
+          - name: abv
+            description: "Alcohol by volume (percentage)"
+          - name: ibu
+            description: "International Bitterness Units (beer bitterness)"
+          - name: ebc
+            description: "European Brewing Convention color scale"
+          - name: ph
+            description: "Acidity level of the beer"
+          - name: brewers_tips
+            description: "Tips from the brewer about this beer"
+          - name: contributed_by
+            description: "Contributor name who added this beer entry"
+          - name: inserted_at
+            description: "Timestamp when the record was ingested into Postgres"
+
+      - name: malt_ingredients
+        description: "Table with malt ingredient details for each beer"
+        columns:
+          - name: id
+            description: "Surrogate primary key for malt_ingredients"
+          - name: beer_id
+            description: "Foreign key to raw_beer_data (PunkAPI beer_id)"
+            tests:
+              - not_null
+          - name: malt_name
+            description: "Name of the malt"
+          - name: amount_value
+            description: "Quantity of this malt"
+          - name: amount_unit
+            description: "Unit for the malt quantity (e.g., kilograms)"
+
+      - name: hop_ingredients
+        description: "Table with hop ingredient details for each beer"
+        columns:
+          - name: id
+            description: "Surrogate primary key for hop_ingredients"
+          - name: beer_id
+            description: "Foreign key to raw_beer_data (PunkAPI beer_id)"
+            tests:
+              - not_null
+          - name: hop_name
+            description: "Name of the hop"
+          - name: amount_value
+            description: "Quantity of this hop addition"
+          - name: amount_unit
+            description: "Unit for the hop quantity (e.g., grams)"
+          - name: add_stage
+            description: "Stage of brewing when hop is added (minutes to end, 'Dry Hop', etc.)"
+          - name: attribute
+            description: "Attribute (e.g., Bitter, Flavour, Aroma) of the hop addition"
+
+      - name: yeast_ingredients
+        description: "Table with yeast ingredient details for each beer"
+        columns:
+          - name: id
+            description: "Surrogate primary key for yeast_ingredients"
+          - name: beer_id
+            description: "Foreign key to raw_beer_data (PunkAPI beer_id)"
+            tests:
+              - not_null
+          - name: yeast_name
+            description: "Name/designation of the yeast used"
+
+      - name: food_pairings
+        description: "Table of food pairings for each beer"
+        columns:
+          - name: id
+            description: "Surrogate primary key for food_pairings"
+          - name: beer_id
+            description: "Foreign key to raw_beer_data (PunkAPI beer_id)"
+            tests:
+              - not_null
+          - name: pairing
+            description: "Food item recommended to pair with this beer"
