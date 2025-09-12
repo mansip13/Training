@@ -6,33 +6,35 @@ It ingests raw beer data into Postgres, transforms it with dbt, and visualizes i
 ---
 
 ## 📂 Project Structure
+## 📂 Project Structure
 
+```text
 punk-api/
-├── airflow/ # Orchestration DAGs
-│ └── orchestrator.py
-├── api-request/ # API ingestion
-│ ├── api_request.py
-│ └── insert_records.py
-├── dbt/ # dbt project
-│ ├── my_project/
-│ │ ├── dbt_project.yml
-│ │ ├── models/
-│ │ │ ├── staging/
-│ │ │ │ └── staging.sql
-│ │ │ ├── marts/
-│ │ │ │ ├── master_beer_table.sql
-│ │ │ │ ├── beer_malts.sql
-│ │ │ │ ├── beer_hops.sql
-│ │ │ │ ├── beer_food_pairings.sql
-│ │ │ │ └── reports/
-│ │ │ │ ├── agg_beer_metrics.sql
-│ │ │ │ ├── beer_by_year.sql
-│ │ │ │ └── beer_by_contributor.sql
-│ │ └── sources.yml
-│ └── profiles.yml
+├── airflow/                  # Orchestration DAGs
+│   └── orchestrator.py
+├── api-request/              # API ingestion
+│   ├── api_request.py
+│   └── insert_records.py
+├── dbt/                      # dbt project
+│   ├── my_project/
+│   │   ├── dbt_project.yml
+│   │   ├── models/
+│   │   │   ├── staging/
+│   │   │   │   └── staging.sql
+│   │   │   ├── marts/
+│   │   │   │   ├── master_beer_table.sql
+│   │   │   │   ├── beer_malts.sql
+│   │   │   │   ├── beer_hops.sql
+│   │   │   │   ├── beer_food_pairings.sql
+│   │   │   │   └── reports/
+│   │   │   │       ├── agg_beer_metrics.sql
+│   │   │   │       ├── beer_by_year.sql
+│   │   │   │       └── beer_by_contributor.sql
+│   │   └── sources.yml
+│   └── profiles.yml
 ├── docker-compose.yml
 └── README.md
-
+```
 
 ---
 
